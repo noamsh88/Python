@@ -1,14 +1,14 @@
 from pymongo import MongoClient
 import sys
 
-"""
+
 server_name = str(input("Please Insert Mongo Host with following format mongodb://hostname:port :"))
 src_db  = str(input("Insert Source DB: "))
 trg_db = str(input("Insert Target DB: "))
-"""
-server_name = str('mongodb://illin4040:27017')
-src_db = str('train_mongo')
-trg_db = str('train_mongo2')
+
+#server_name = str('mongodb://hostname:27017')
+#src_db = str('train_mongo')
+#trg_db = str('train_mongo2')
 
 
 """
