@@ -14,7 +14,7 @@ bkp_dir_path='C:/TEST/MongoDB'
 """
 
 """
-    Script is duplicating given Mongo DB to new one
+    Script is taking backup of Mongo DB using mongodump command 
 """
 
 client = MongoClient("mongodb://illin4040:27017/")
