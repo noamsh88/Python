@@ -2,7 +2,7 @@ from pymongo import MongoClient
 import sys
 
 
-server_name = str(input("Please Insert Mongo Host with following format mongodb://hostname:port :"))
+server_name = str(input("Please Insert Mongo Host in following format mongodb://hostname:port :"))
 src_db  = str(input("Insert Source DB: "))
 trg_db = str(input("Insert Target DB: "))
 
@@ -17,7 +17,7 @@ trg_db = str(input("Insert Target DB: "))
 
 myclient = MongoClient(server_name)
 
-#Checks if Source DB name exist and exist the program in case not
+#Checks if Source DB name exist and exit the program in case not
 def IfDBExist(src_db):
     if bool(src_db not in myclient.list_database_names()):
         sys.exit("DB name " + src_db + " Not Exist ")
@@ -30,6 +30,6 @@ def DuplicateDB(server_name,src_db,trg_db):
         print('Copy failed')
 
 
-
+#Main#
 IfDBExist(src_db)
 DuplicateDB(server_name,src_db,trg_db)
