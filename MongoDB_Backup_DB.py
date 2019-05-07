@@ -14,10 +14,10 @@ bkp_dir_path='C:/TEST/MongoDB'
 """
 
 """
-    Script is taking backup of Mongo DB using mongodump command 
+    Script is taking backup of Mongo DB using mongodump command
 """
 
-client = MongoClient("mongodb://illin4040:27017/")
+client = MongoClient(host_name)
 
 #Checks if Source DB name exist and exist the program in case not
 def IfDBExist(db_name):
