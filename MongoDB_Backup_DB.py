@@ -14,7 +14,7 @@ bkp_dir_path='C:/TEST/MongoDB'
 """
 
 """
-    Script is taking backup of Mongo DB using mongodump command
+    Script restoring Mongo DB from given backup location
 """
 
 client = MongoClient(host_name)
