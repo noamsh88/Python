@@ -1,6 +1,6 @@
-####################################################################
-#Script Connect To Oracle DB and Write Biggest Tables Into Txt File#
-####################################################################
+########################################################################
+#Script Connect To Oracle DB and Write Tablespaces Status Into Txt File#
+########################################################################
 import cx_Oracle
 
 #Oracle DB Config
